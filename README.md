@@ -21,7 +21,8 @@ https://github.com/user-attachments/assets/680490d2-ebec-4846-871c-98fdc383b513
 
 ## News 🎉🎉🎉
 
-20260208: Our paper entitled _Decoupling Alzheimer’s Disease Pathology in PET with Improved Clinical Relevance via Interpretable Adversarial Decomposition Learning_ has just been accepted by _Radiology_! You can try out the `ADAD` score in our 3DSlicer plugin!
+- 20260208: Our paper entitled _Decoupling Alzheimer’s Disease Pathology in PET with Improved Clinical Relevance via Interpretable Adversarial Decomposition Learning_ has just been accepted by _Radiology_! You can try out the `ADAD` score in our 3DSlicer plugin!
+- 20260408: Our paper is published online by [Radiolody](https://pubs.rsna.org/doi/10.1148/radiol.252321)! 
 
 ## Quality control
 
@@ -71,6 +72,8 @@ Metrics:
 - `CenTauR`: Leuzy A, Raket LL, Villemagne VL, Klein G, Tonietto M, Olafson E, et al. Harmonizing tau positron emission tomography in Alzheimer’s disease: The CenTauR scale and the joint propagation model. Alzheimer’s & Dementia. 2024;20(9):5833–48.
 - `CenTauRz`: Villemagne VL, Leuzy A, Bohorquez SS, Bullich S, Shimada H, Rowe CC, et al. CenTauR: Toward a universal scale and masks for standardizing tau imaging studies. Alzheimer’s & Dementia: Diagnosis, Assessment & Disease Monitoring. 2023;15(3):e12454.
 - `Fill States`: Doering E, Hoenig MC, Giehl K, et al. “Fill States”: PET-derived Markers of the Spatial Extent of Alzheimer Disease Pathology. Radiology. 2025;314(3):e241482. doi:10.1148/radiol.241482
+        
+        
         
             
 - [ ] `Abeta load / AmyloidIQ` (working on 🚧, the following publications used the same algorithm) :
@@ -137,6 +140,27 @@ We sincerely thank the passionate and outstanding users and contributors of DCCC
     </tr>
   </tbody>
 </table>
+
+## Citation
+
+If you find this repo helpful for your work, please cite
+
+```bib
+@article{doi:10.1148/radiol.252321,
+author = {Tang, Cheng and Sun, Xun and Tang, Anqi and Ruan, Weiwei and Liu, Fang and Fang, Hanyi and Gai, Yongkang and Liang, Zhihou and Su, Ying and Wang, Xinggang and Lan, Xiaoli},
+title = {Decoupling Alzheimer Disease Pathologic Abnormalities at PET with Improved Clinical Relevance by Interpretable Adversarial Decomposition Learning},
+journal = {Radiology},
+volume = {319},
+number = {1},
+pages = {e252321},
+year = {2026},
+doi = {10.1148/radiol.252321},
+note ={PMID: 41944723},
+URL = {https://doi.org/10.1148/radiol.252321},
+eprint = { https://doi.org/10.1148/radiol.252321},
+abstract = { Background Template-based PET metrics quantify Alzheimer disease (AD) amyloid-β (Aβ) and tau burden but compress whole-brain data into a single scalar, overlooking disease heterogeneity and sometimes causing imaging-clinical discordance. Artificial intelligence (AI) approaches capture richer patterns but often lack biologic interpretability. Purpose To develop and validate an interpretable deep-learning framework that separates AD-specific abnormalities from physiologic uptake using pathophysiologic constraints, generating a clinically meaningful AI biomarker. Materials and Methods In this retrospective study, Aβ and tau PET scans from the Alzheimer’s Disease Neuroimaging Initiative, Australian Imaging Biomarkers and Lifestyle study, Global Alzheimer’s Association Interactive Network, and the authors’ center were analyzed. An adversarial decomposition learning (ADL) network generated voxel-level pathologic maps and an AD adversarial decomposition (ADAD) score. Discriminatory performance for clinical AD versus cognitively normal individuals was evaluated using the area under the curve (AUC). Clinical relevance was assessed with cognitive, hippocampal volume, cerebrospinal fluid (CSF), and neuropathologic measures using longitudinal mixed-effects models and Spearman correlations. Results The study included 7457 Aβ PET scans from 3595 patients (median age, 71.4 years; IQR, 65.7–77.0 years; 1637 female patients) and 1894 tau PET scans from 1127 patients (median age, 72.0 years; IQR, 66.9–78.5 years; 545 female patients). External testing AUCs were 0.94 (95\% CI: 0.89, 0.98) for Aβ and 0.98 (95\% CI: 0.95, 1.00) for tau. ADL generated interpretable pathologic attribution maps that correlated with expert rankings (Aβ and tau, Spearman ρ = 0.79 and 0.63, respectively). Although Centiloid and CenTauRz showed numerically higher correlations with postmortem neuropathologic structure and stronger associations with CSF biomarkers, the ADAD score demonstrated independent baseline and longitudinal associations with cognitive outcomes and hippocampal atrophy after adjustment. Conclusion Pathophysiologic-constrained ADL provided interpretable, personalized pathologic maps and an AI-derived ADAD score that more closely linked PET pathologic abnormalities with multimodal clinical measures. © RSNA, 2026 Supplemental material is available for this article. }
+}
+```
 
 ## License
 
